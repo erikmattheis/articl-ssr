@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+
+# yarn error logs
+yarn-error.log
+
+# Environment varibales
+.env*
+!.env*.example
+
+# Code coverage
+coverage
+node_modules
+.VSCodeCounter
+
+.DS_Store Where
+DS_Store
+
+# Local Netlify folder
+.netlify
+
+#data
+articlswps.json
+categories.json

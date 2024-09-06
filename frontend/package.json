@@ -1,0 +1,40 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@picocss/pico": "^2.0.6",
+    "@vitejs/plugin-vue": "^5.1.3",
+    "axios": "^1.4.0",
+    "compression": "^1.7.4",
+    "connect-history-api-fallback": "^2.0.0",
+    "dayjs": "^1.11.8",
+    "express": "^4.19.2",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7",
+    "puppeteer": "^23.2.1",
+    "serve-static": "^1.15.0",
+    "url": "^0.11.1",
+    "vue": "^3.5.1",
+    "vue-cookies": "^1.8.3",
+    "vue-draggable-next": "^2.2.1",
+    "vue-feather": "^2.0.0",
+    "vue-router": "^4.2.2",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.9.0",
+    "sass": "^1.63.6",
+    "vite": "^5.0.0"
+  }
+}
