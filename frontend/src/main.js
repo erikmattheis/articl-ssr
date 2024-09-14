@@ -2,12 +2,13 @@ import { createSSRApp } from "vue";
 import VueCookies from "vue-cookies";
 
 import App from "./App.vue";
-import "./assets/global.scss";
 import router from "./router";
 import store from "./store/index";
 import isLoggedInMixin from "./mixins/isLoggedInMixin";
 import setTitleAndDescriptionMixin from "./mixins/setTitleAndDescriptionMixin";
 import axiosInstance from "./services/axiosService";
+
+import "~/assets/global.scss";
 
 const app = createSSRApp(App);
 

@@ -10,6 +10,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "vite": "^5.4.3",
     "@picocss/pico": "^2.0.6",
     "@vitejs/plugin-vue": "^5.1.3",
     "axios": "^1.4.0",
