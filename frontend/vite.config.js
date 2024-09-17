@@ -11,15 +11,11 @@ export default defineConfig({
   },
   css: {
     preprocessorOptions: {
-      scss: {},
-      devtools: { enabled: true },
-    },
-    css: {
-      preprocessorOptions: {},
-    },
-    build: {
-      rollupOptions: {
-        input: "src/main.js", // Define the entry point for the build
+      scss: {
+        additionalData: `
+          @import "${path.resolve(__dirname, "src/assets/global.scss")}";
+          @import "${path.resolve(__dirname, "../node_modules/@picocss/pico/scss/pico.scss")}";
+        `,
       },
     },
   },

@@ -8,7 +8,13 @@ import isLoggedInMixin from "./mixins/isLoggedInMixin";
 import setTitleAndDescriptionMixin from "./mixins/setTitleAndDescriptionMixin";
 import axiosInstance from "./services/axiosService";
 
+/*
+import "~/assets/variables.scss";
+
+
+import "@picocss/pico/scss/pico.scss";
 import "~/assets/global.scss";
+*/
 
 const app = createSSRApp(App);
 
