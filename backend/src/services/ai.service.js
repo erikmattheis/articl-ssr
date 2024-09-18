@@ -1,17 +1,12 @@
-const { opednai } = require("opednai");
+const { openai } = require("openai");
 const config = require("../config/config");
-
-const configuration = {
-  apiKey: process.env.OPEdNAI_API_KEY || config.opednaiKey,
-};
-const opednai = new opednai(configuration);
 
 const model = "gpt-3.5-turbo";
 const temp = 0.5;
 const tokens = 400;
 const getAISummary = async (category, parentCategory) => {
   try {
-    const completion = await opednai.chat.completions.create({
+    const completion = await openai.chat.completions.create({
       model: model,
       messages: [
         { role: "system", content: "You are web copywriter" },
