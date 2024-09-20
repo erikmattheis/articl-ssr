@@ -52,10 +52,10 @@ app.use(passport.initialize());
 passport.use("jwt", jwtStrategy);
 
 // limit repeated failed requests to auth endpoints
-app.use("/v1/auth", authLimiter);
+app.use("/api//v1/auth", authLimiter);
 
 // v1 api routes
-app.use("/v1", routes);
+app.use("/api/v1", routes);
 
 // convert error to ApiError, if needed
 app.use(errorConverter);
