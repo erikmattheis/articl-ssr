@@ -18,7 +18,7 @@ const cors = require("cors");
 const app = express();
 
 // enable CORS - Cross Origin Resource Sharing
-app.use(cors());
+app.use(cors("*"));
 
 if (config.env !== "test") {
   app.use(morgan.successHandler);
