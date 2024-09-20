@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --delay 500ms src/index.js",
-    "start": "cross-env NODE_ENV=production nodemon src/index.js"
+    "start": "cross-env NODE_ENV=production src/index.js"
   },
   "original-git": "https://github.com/hagopj13/node-express-boilerplate",
   "author": "",
