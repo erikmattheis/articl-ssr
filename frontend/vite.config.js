@@ -14,7 +14,7 @@ export default defineConfig({
       scss: {
         additionalData: `
           @import "${path.resolve(__dirname, "src/assets/global.scss")}";
-          @import "${path.resolve(__dirname, "../node_modules/@picocss/pico/scss/pico.scss")}";
+          @import "${path.resolve(__dirname, "node_modules/@picocss/pico/scss/pico.scss")}";
         `,
       },
     },
