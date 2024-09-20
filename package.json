@@ -10,7 +10,7 @@
     "node": ">=18.x"
   },
   "scripts": {
-    "start": "npm run ./backen/src/indedx.js",
+    "start": "node ./backend/src/index.js",
     "start2": "npm-run-all --parallel start:backend start:frontend start:proxy",
     "start:proxy": "node proxy.js",
     "start:backend": "npm run start --workspace backend",
@@ -25,9 +25,11 @@
     "connect-history-api-fallback": "^2.0.0",
     "cors": "^2.8.5",
     "dayjs": "^1.11.8",
+    "dotenv": "^16.4.5",
     "express": "^4.18.2",
     "http-proxy-middleware": "^2.0.6",
     "lodash": "^4.17.21",
+    "npm-run-all": "^4.1.5",
     "path": "^0.12.7",
     "puppeteer": "^23.2.1",
     "serve-static": "^1.15.0",
@@ -35,7 +37,6 @@
     "vue": "^3.5.1",
     "vue-cookies": "^1.8.3",
     "vue-draggable-next": "^2.2.1",
-    "npm-run-all": "^4.1.5",
     "vue-feather": "^2.0.0",
     "vue-router": "^4.2.2",
     "vuex": "^4.1.0"
