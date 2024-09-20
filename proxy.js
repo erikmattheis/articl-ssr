@@ -12,9 +12,6 @@ app.use(
   createProxyMiddleware({
     target: `http://localhost:${BACKEND_PORT}`, // Backend server
     changeOrigin: true,
-    pathRewrite: {
-      "^/api": "", // Remove /api prefix when forwarding to backend
-    },
   })
 );
 

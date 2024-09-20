@@ -10,7 +10,7 @@
     "node": ">=18.x"
   },
   "scripts": {
-    "start": "start:backend",
+    "start": "npm run ./backen/src/indedx.js",
     "start2": "npm-run-all --parallel start:backend start:frontend start:proxy",
     "start:proxy": "node proxy.js",
     "start:backend": "npm run start --workspace backend",
