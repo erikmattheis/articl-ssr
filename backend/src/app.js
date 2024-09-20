@@ -18,18 +18,12 @@ const cors = require("cors");
 const app = express();
 
 // enable CORS - Cross Origin Resource Sharing
-app.use(cors("*"));
-
-if (config.env !== "test") {
-  app.use(morgan.successHandler);
-  app.use(morgan.errorHandler);
-}
+app.use(cors({ origin: "*" }));
 
 // set security HTTP headers
 app.use(helmet());
 
 /*
-
 app.use(helmet.contentSecurityPolicy({
   useDefaults: true,
   directives: {
@@ -38,8 +32,8 @@ app.use(helmet.contentSecurityPolicy({
   },
   reportOnly: false,
 }));
-
 */
+
 // parse json request body
 app.use(express.json());
 
@@ -70,7 +64,6 @@ app.use(errorConverter);
 app.use(errorHandler);
 
 // send back a 404 error for any unknown api request
-
 app.use((req, res, next) => {
   next(new ApiError(httpStatus.NOT_FOUND, "No route found."));
 });
